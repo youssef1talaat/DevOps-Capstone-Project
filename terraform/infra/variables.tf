@@ -27,7 +27,7 @@ variable "kubernetes_version" {
 
 variable "node_instance_types" {
   type    = list(string)
-  default = ["t3.medium"]
+  default = ["t3.small"]
 }
 
 variable "node_desired_size" {

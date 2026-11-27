@@ -19,3 +19,13 @@ variable "github_repo" {
   description = "GitHub repository name (e.g. 'devops-capstone')"
   type        = string
 }
+
+variable "github_owner_id" {
+  description = "Immutable GitHub owner ID"
+  type        = string
+}
+
+variable "github_repository_id" {
+  description = "Immutable GitHub repository ID"
+  type        = string
+}

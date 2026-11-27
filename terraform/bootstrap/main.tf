@@ -34,7 +34,8 @@ data "aws_caller_identity" "current" {}
 
 locals {
   account_id = data.aws_caller_identity.current.account_id
-  repo       = "${var.github_owner}/${var.github_repo}"
+
+  repo = "${var.github_owner}@${var.github_owner_id}/${var.github_repo}@${var.github_repository_id}"
 }
 
 # -----------------------------------------------------------------------------
