@@ -31,6 +31,7 @@ concurrency:
 env:
   TF_IN_AUTOMATION: "true"
   TF_VAR_aws_region: ${{ vars.AWS_REGION }}
+  TF_VAR_admin_principal_arns: ${{ vars.ADMIN_PRINCIPAL_ARNS }}
   WORKDIR: terraform/infra
 
 jobs:
